@@ -1,0 +1,536 @@
+/*fonts used from Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Source+Serif+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+/*BODY*/
+/*style the body*/
+body{
+    background-color: #FAF9F6;
+    padding-right: 40px;
+    padding-left: 40px;   
+}
+
+/*NAVBAR*/
+/*navbar area style*/
+.navbar {
+  background-color: #FAF9F6;
+  height:120px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/*navbar image style*/
+.navbar .logo{
+  width: 150px;
+  width: 150px;
+  float: left;
+  align-items: center;
+}
+
+/*navbar text style*/
+.navbar .menu{
+  background-color: #FAF9F6;
+  font-weight: lighter;
+  font-size: larger;
+  float: right;
+  text-align: right;
+  float: right;
+  margin-top: 45px;
+}
+
+.navbar .menu li {
+  display: inline;
+  font-family:'Anonymous Pro', monospace;
+  font-size: 25px; 
+}
+
+.navbar .menu li + li {
+  margin-left: 35px;
+}
+
+/*navbar link style*/
+.navbar .menu a {
+  color: #405269;
+  text-decoration: none;
+}
+
+/*navbar hover style*/
+.navbar .menu a:hover{
+  color: #F8CBC6;
+}
+
+/*HOME PAGE*/
+/*text before banner*/
+.top{
+  font-family: 'Varela Round', sans-serif;
+  color: #405269;
+  font-size: 50px;
+  text-align: left;
+  padding-left: 250px;
+  position: absolute;
+  margin-top: -310px;
+  
+}
+
+.banner{
+  position: relative;
+  margin-top: 20px;
+  margin-left: -15px; 
+  margin-bottom: 20px; 
+  background-image: url("statics/images/bibHome.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+/*text after banner*/
+.bottom{
+  position: absolute;
+  font-family: 'Varela Round', sans-serif;
+  color: #405269;
+  font-size: 50px;
+  text-align: right;
+  padding-left: 500px;
+  margin-top: -40px; 
+}
+
+/*button for learn more*/
+.btn-mor{
+  align-content: center;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  margin-left: 520px;
+}
+
+.more{
+  background-color:#FCE8BC;
+  border: none;
+  color:#405269;
+  font-family:'Varela Round', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+
+/*ABOUT PAGE*/
+/*about me section*/
+.knowme{
+  background-color: #405269;
+  font-family: 'Varela Round', sans-serif;
+  color:#FAF9F6;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 0px 12px 30px;
+  text-align: center;
+}
+
+/*content on the left*/
+.wrapperA1{
+  display: grid;
+  column-count: 2;
+  grid-template-columns: 400px 767px;
+  margin-bottom: 70px;  
+}
+
+.left{
+  text-align: center;
+  margin-top: -22px;
+}
+
+/*image*/
+.me{
+  width: 400px;
+  height: auto;
+  border-radius: 0px 0px 0px 15px;
+}
+
+/*content on the right*/
+.right{
+  font-family: 'Anonymous Pro', monospace;
+  color: #405269;
+  line-height: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: justify;
+  align-items: center;
+  background-color: #F4E5E3; 
+  border-radius: 0px 0px 15px 0px;
+  margin-top: -22px;
+}
+
+/*have a look section*/
+.see{
+  background-color: #405269;
+  font-family: 'Varela Round', sans-serif;
+  color:#FAF9F6;
+  border-radius: 15px 15px 0px 0px;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 0px 12px 30px;
+  text-align: center;
+}
+
+.seeArticle{
+  font-family: 'Anonymous Pro', monospace;
+  color: #405269;
+  line-height: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  align-items: center;
+  background-color: #F4E5E3; 
+  margin-top: -22px;
+}
+/*buttons to access to my cv and my projects*/
+.resources{
+  gap: 40px;
+  background-color: #F4E5E3;
+  padding: 20px;
+  border-radius: 0px 0px 15px 15px;
+  margin-bottom: 80px;
+  margin-top: -40px;
+  padding-left: 410px;
+}
+
+.resources a{
+  color: #FAF9F6;
+  text-decoration: none;
+}
+
+.chip {
+  display: inline-block;
+  padding: 0 25px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 25px;
+  background-color:#80ADAD;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 14px;
+  color:#FAF9F6;
+  margin-right: 40px;
+}
+
+/*image on the button*/ 
+.chip img {
+  float: left;
+  margin: 0 10px 0 -25px;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px 0px 0px 25px;  
+}
+
+
+/*PROJECTS PAGE*/
+/*titles*/
+.webapp{
+  background-color: #405269;
+  font-family: 'Varela Round', sans-serif;
+  color:#FAF9F6;
+  border-radius: 15PX;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 12px 0px 12px 30px;
+  text-align: left; 
+}
+
+/*cards*/
+:root {
+  --surface-color:#80ADAD;
+  --curve: 15;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.cards {
+  display: grid;
+  column-count: 2;
+  grid-template-columns: 500px 500px;
+  gap:30px;
+  padding: 20px 50px 60px 66px;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  text-decoration: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-image {      
+  width: 100%;
+  height: auto;
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card-overlay {
+  transform: translateY(0);
+}
+
+.card-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border-top-left-radius: 30px;   
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card-arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card:hover .card-header {
+  transform: translateY(0);
+}
+
+.card-thumb {
+  flex-shrink: 0;
+  width: 80px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card-title {
+  font-size: 15px;
+  margin: 0 0 .3em;
+  color:#FAF9F6;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.card-description {
+  padding: 0px 40px 20px 40px;
+  margin: 0;
+  color:#FAF9F6;
+  font-family: 'Anonymous Pro', monospace;   
+  text-align: justify;
+  line-height: 24px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+} 
+
+
+/*CONTACT PAGE*/ 
+.wrapper2{
+  display: grid;
+  column-count: 2;
+  max-width: 1200px;
+  grid-template-columns: 600px 600px;
+  margin: 0 auto;
+}
+.container {
+  position: relative;
+  text-align: center;  
+}
+
+.title{
+  font-family: 'Varela Round', sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #405269;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.envelop{
+    width: 60%;
+    margin-top: 40px;
+}
+
+.right-C{
+    padding-left: 20px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 20px;
+    background-color:#FAF9F6;   
+}
+
+/*Form Style*/ 
+.form-group{
+    color: #405269;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family:'Varela Round', sans-serif;
+    font-weight: bold;   
+}
+
+.form-control{
+    background-color:#FAF9F6;
+    border-color: #80ADAD;
+    border:0cm;
+    width: 400px;  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    border-radius: 15px;
+    padding: 5px 5px;
+}
+
+button{
+    background-color:#FCE8BC;
+    border: none;
+    color:#405269;
+    font-family:'Varela Round', sans-serif;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 10px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/*style form.html*/
+.message{
+    font-family: 'Hammersmith One', sans-serif;
+    font-size: 50px;
+    color:#80ADAD;
+    text-align: center;
+}
+
+.msg{
+  font-family: 'Hammersmith One', sans-serif;
+    font-size: 50px;
+    color:#80ADAD;
+    text-align: center;
+}
+
+h1{
+  font-family: 'Varela Round', sans-serif;
+}
+
+/*THANKS*/
+.thanks{
+  margin-bottom: 205px;
+  text-align: center;
+  color: #405269;
+  
+}
+.exit{
+  background-color:#FCE8BC;
+  border: none;
+  color:#405269;
+  font-family:'Varela Round', sans-serif;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  align-items: center;
+}
+/*DATABASE PAGE*/
+.database {
+  font-family: 'Varela Round', sans-serif;
+  color:#80ADAD;
+  background: #405269; 
+  align-items: center; 
+}
+
+.data{
+  font-family: 'Varela Round', sans-serif;
+  text-align: center;
+}
+
+table{
+  color:#F8CBC6;
+  border-color:#FAF9F6;
+  align-items: center;
+  
+}
+.database a{
+  font-family: 'Varela Round', sans-serif;
+  color:#80ADAD;
+  font-size: 20px;
+  align-items:  center;
+  text-decoration: none;
+  padding-top: 20px; 
+}
+
+
+/*FOOTER*/
+.footer{
+  padding-top: 10px;
+  background-color:#405269;
+  margin-left: -48px;
+  margin-right: -48px;
+  margin-bottom: -20px;
+}
+
+.footer .options{
+  background-color: #405269;
+  font-weight: lighter;
+  font-size: larger;
+  float: center;
+  text-align: center;
+  padding-bottom: 15px;
+  color: #FAF9F6;
+}
+
+.footer .options li {
+  font-family:'Anonymous Pro', monospace;
+  font-size: 25px;
+  color: #FAF9F6;
+  display: inline;
+}
+
+.footer .options li + li {
+  margin-left: 100px;
+}
+
+.footer .options a {
+  font-family:'Anonymous Pro', monospace;
+  font-size: 25px;
+  text-decoration: none; 
+  color: #80ADAD;
+}
+
+.footer .options a:hover {
+  color: #FCE8BC
+}
+
+.footer .copyright {
+  font-family: 'Anonymous Pro', monospace; 
+  text-align:center;
+  font-size: 16px;
+  color:#747577;
+  padding-bottom: 10px;
+}

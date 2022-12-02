@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href='/static/css/style.css'/>
+    <title>Document</title>
+</head>
+<body>
+    <div class="database">
+        <h1 class="data">This my Database</h1>
+        <table border = 1>
+            <tableHead>
+                <td>nm</td>
+                <td>sn</td>
+                <td>email</td>
+                <td>message</td>
+            </tableHead>
+
+        {% for row in rows %}
+
+            <tr>
+                <td>{{row['nm']}}</td>
+                <td>{{row['sn']}}</td>
+                <td>{{row['email']}}</td>
+                <td>{{row['message']}}</td>  
+            </tr>
+        {% endfor %}
+        </table>
+        <div class="back-home">
+            <a href = '/'>Go back to home page</a>
+        </div>
+    </div>
+</body>
+</html>

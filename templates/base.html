@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <div class="navbar">
+            <a href="{{ url_for('home') }}">
+                <img class="logo" src="{{ url_for('static', filename= 'images/logo.png') }}" alt="Logo">              
+            </a>
+            <ul class="menu">
+                <li><a href="{{ url_for('about') }}">About</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('contact') }}">Contact</a></li>
+            </ul>
+        </div> 
+        {% block content %} 
+        {% endblock %}
+        <footer> 
+            <div class="footer">
+                <ul class="options">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+                <p class="copyright">BibianaSansao© 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

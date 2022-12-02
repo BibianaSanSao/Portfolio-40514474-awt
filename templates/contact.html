@@ -1,0 +1,58 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href='/static/css/style.css'/>
+        <title>CONTACT</title>
+        <!-- favicon -->
+        <link rel="icon" type="image" href="{{ url_for('static', filename= 'images/favicon.png') }}"/>
+    </head> 
+    <body>
+        <!--this is a jinja2 code in base.html for the navbar that goes in every page -->
+        {% extends "base.html" %}
+        {% block content %}
+
+        <!--this is the left part of the contact page-->
+        <div class="wrapper2">
+            <div class="left-C">
+                <div class="container">
+                    <div class="title">If you like my work,<br>just get in touch!</div>
+                  <img src="{{ url_for('static', filename= 'images/envelop.png') }}" class="envelop">
+                </div>
+            </div>
+            <!--this is the right part of the contact page--> 
+            <!--the contact form--> 
+            <div class="right-C">
+                <form action="{{ url_for('addRecords')}}" method="POST">
+                      <!--name-->
+                      <div class="form-group">
+                          <label for="firstName">First Name</label><br>
+                          <input type="text" class="form-control" id="FirstName" name="nm">
+                      </div>
+                      <!--last name-->
+                      <div class="form-group">
+                          <label for="lastName">Last Name</label><br>
+                          <input type="text" class="form-control" id="LastName" name="sn">
+                      </div>
+                      <!--email-->
+                      <div class="form-group">
+                        <label for="email">Email address</label><br>
+                        <input type="text" class="form-control" id="Email" name="email" placeholder="name@example.com">
+                      </div>
+                      <!--message-->
+                      <div class="form-group">
+                        <label for="email">Message</label><br>
+                        <textarea class="form-control" id="Message" name="message" rows="4"></textarea>
+                      </div>
+                       <!--submit button-->
+                      <div class="form-group">
+                          <button type="submit">SEND</button>
+                      </div>
+                  </form> 
+              </div>
+        </div>
+          {% endblock %}
+    </body>
+</html>

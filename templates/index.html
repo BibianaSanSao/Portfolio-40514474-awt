@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS SHEET -->
+        <link rel="stylesheet" href='/static/css/style.css'/>
+        <title>HOME</title>
+        <!-- favicon -->
+        <link rel="icon" type="image" href="{{ url_for('static', filename= 'images/favicon.png') }}"/>
+    </head>
+    <body>
+        <!--this is a jinja2 code in base.html for the navbar that goes in every page -->
+        {% extends "base.html" %}
+        {% block content %}
+        <div class="banner">
+            
+            <img src="{{ url_for('static', filename= 'images/bibiHome.png') }}">
+            <div>
+                <p class="top">Hi, I am</p>
+                <p class="bottom">a Web Designer & Developer</p>
+            </div>
+        </div>
+        <div class="btn-mor">
+            <a href="{{ url_for('about') }}" class="more">LEARN MORE</a> 
+        </div>
+        {% endblock %}
+    </body>
+</html>

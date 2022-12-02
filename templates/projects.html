@@ -1,0 +1,106 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href='/static/css/style.css'/>
+        <title>PROJECTS</title>
+        <!-- favicon -->
+        <link rel="icon" type="image" href="{{ url_for('static', filename= 'images/favicon.png') }}"/>
+    </head>
+    <body>
+        <!--this is a jinja2 code in base.html for the navbar that goes in every page -->
+        {% extends "base.html" %}
+        {% block content %}
+        <p class="webapp">WEBSITES</p>
+        <div class="websites">
+            <ul class="cards">
+              <li>
+                <a href="https://bibianasansao.github.io/QueenBeeWeb/" class="card">
+                  <img src="{{ url_for('static', filename= 'images/queenBee.png') }}" class="card-image" alt="" />
+                  <div class="card-overlay">
+                    <div class="card-header">
+                      <div class="card-header-text">
+                        <h3 class="card-title">QUEEN BEE</h3>            
+                      </div>
+                    </div>
+                    <p class="card-description">My First website, using just HTML and CSS.</p>
+                  </div>
+                </a>      
+              </li>
+              <li>
+                  <a href="https://137rock.netlify.app/" class="card">
+                    <img src="{{ url_for('static', filename= 'images/137.png') }}" class="card-image" alt="" />
+                    <div class="card-overlay">
+                      <div class="card-header">
+                        <div class="card-header-text">
+                          <h3 class="card-title">137 ROCK</h3>            
+                        </div>
+                      </div>
+                      <p class="card-description">This website was my second project and it is bilt using HTML, JavaScript and CSS.</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="https://bibianasansao.github.io/QueenBeeWeb/" class="card">
+                    <img src="{{ url_for('static', filename= 'images/quiz.png') }}" class="card-image" alt="" />
+                    <div class="card-overlay">
+                      <div class="card-header">
+                        <div class="card-header-text">
+                          <h3 class="card-title">TRAVEL QUIZ</h3>            
+                        </div>
+                      </div>
+                      <p class="card-description">This is a quiz app project built with HTML, JavaScript and CSS.</p>
+                    </div>
+                  </a>      
+                </li>
+                <li>
+                  <a href="https://bibianasansao.github.io/QueenBeeWeb/" class="card">
+                    <img src="{{ url_for('static', filename= 'images/construction.png') }}" class="card-image" alt="" />
+                    <div class="card-overlay">
+                      <div class="card-header">
+                        <div class="card-header-text">
+                          <h3 class="card-title">UNDER CONSTRUCTION</h3>            
+                        </div>
+                      </div>
+                      <p class="card-description">Next project coming soon!!!</p>
+                    </div>
+                  </a>      
+                </li>
+            </ul>
+        </div>
+        <p class="webapp">MOBILE APPS</p>
+        <div class="apps">
+            <ul class="cards">
+                <li>
+                    <a href="https://bibianasansao.github.io/QueenBeeWeb/" class="card">
+                    <img src="{{ url_for('static', filename= 'images/recycle.png') }}" class="card-image" alt="" />
+                        <div class="card-overlay">
+                            <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">RECYCLE PAL</h3>            
+                            </div>
+                            </div>
+                            <p class="card-description">A prototype in Figma of an app for kids to learn how to recycle.</p>
+                        </div>
+                    </a>      
+                </li>
+                <li>
+                    <a href="https://bibianasansao.github.io/QueenBeeWeb/" class="card">
+                    <img src="{{ url_for('static', filename= 'images/around.png') }}" class="card-image" alt="" />
+                        <div class="card-overlay">
+                            <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">AROUND THE WORLD</h3>            
+                            </div>
+                            </div>
+                            <p class="card-description">This is a quiz built in Android Studio app using Java.</p>
+                        </div>
+                    </a>      
+                </li> 
+            </ul>
+        </div>
+        {% endblock %}
+    </body>
+</html>

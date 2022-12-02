@@ -1,0 +1,51 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- CSS -->
+        <link rel="stylesheet" href='/static/css/style.css'/>
+        <title>ABOUT</title>
+        <!-- favicon -->
+        <link rel="icon" type="image" href="{{ url_for('static', filename= 'images/favicon.png') }}"/>
+        
+
+    </head>
+    <body>
+        <!--this is a jinja2 code in base.html for the navbar that goes in every page -->
+        {% extends "base.html" %}
+        {% block content %}
+            <div class="titles">
+                <p class="knowMe">KNOW ME BETTER</p>
+            </div>
+            <div class="wrapperA1">
+                <div class="left">
+                    <img class="me" src="{{ url_for('static', filename= 'images/me.png') }}" alt="">
+                </div>
+                <div class="right">
+                    <strong>My name is Bibiana Santos Saorin,</strong> an enthusiastic Web Designer and Developer student at Napier University.<br><br>
+                    I started this degree thinking that the coding part was the most enjoyable one. Learning code languages, using logic, fixing the errors and making the web/app work, was what most attracted my attention when I had to choose this degree.<br><br>
+                    Since I was a kid, I have been very creative, but I never thought about being a professional designer. I enjoy creating my projects, choosing the colours, fonts, and how to display the content, and moving things around for a better look. By studying UX and UI, I aim to make my designs user-friendly.<br><br>
+                    It is just the beginning of my career, and I know I still have a lot to learn, but this is what I like the most about being a Web Designer and Developer. <br><br>
+                </div>
+            </div> 
+
+            <div class="titles">
+                <p class="see">NO MORE TALKING, HAVE A LOOK!</p>
+                <p class="seeArticle">Here, you can see my Resume where there are more details about my work experience and studies.<br> Also, you can see all my projects so far. I hope you like it!</p>
+                <div class="resources">
+                    <div class="chip">
+                        <img src="{{ url_for('static', filename= 'images/cv.png') }}" alt="CV" width="96" height="96">
+                       
+                        <a href="{{ url_for('static', filename= 'images/CVBibianaSS.pdf') }}">RESUME</a>
+                    </div>
+                    <div class="chip">
+                        <img src="{{ url_for('static', filename= 'images/projects.png') }}" alt="Projects" width="96" height="96">
+                        
+                        <a href="{{ url_for('projects') }}">PROJECTS</a>
+                    </div>  
+                </div>
+            </div>  
+        {% endblock %}
+    </body>
+</html>
